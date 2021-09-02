@@ -1,0 +1,308 @@
+#body {
+    background: url('~kbbqImg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+   
+
+}
+
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    /*background-color: crimson;*/
+}
+
+#restaurantName {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    margin-left: 1em;
+    font-family: cursive;
+    font-size: 80px;
+    text-shadow: 1px 1px 20px rgb(22, 16, 8);
+}
+
+.coverImg {
+    
+    object-fit: cover;
+    object-position: 0% 30%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  
+}
+
+#logoContainer {
+    margin-right: 2em;
+    margin-top: 2em;
+    width: 100px;
+    height: 100px;
+    border: 4px solid rgba(0, 0, 0, 0.397);
+    background-color: rgba(0, 0, 0, 0.556);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#logo {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url('~korean.png');
+    background-size: 60px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+
+#enter {
+    width: 100px;
+    padding: 20px 0 20px 0;
+    margin-left: 8%;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.438);
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 2px white;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+#enter:hover {
+    background-color: rgba(0, 0, 0, 0.746);
+    color: rgba(128, 128, 128, 0.582);
+}
+
+#buttonContainer {
+    margin-left: 15%;
+    display: flex;
+    gap: 20px;
+}
+
+#home, #menu {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.698);
+    color: white;
+    border: 2px solid black;
+    border-radius: 5%;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.561);
+    font-size: 15px;
+    width: 100px;
+}
+
+#home:hover, #menu:hover {
+    background-color: rgba(0, 0, 0, 0.835);
+    color: rgba(128, 128, 128, 0.651);
+    cursor: pointer;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    background-color: rgba(7, 7, 7, 0.849);
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#restaurantNameHome {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-family: cursive;
+    font-size: 60px;
+    text-shadow: 1px 1px 20px rgb(22, 16, 8);
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    align-content: center;
+}
+
+#homePageDiv {
+    margin-top: 150px;
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto;
+    
+    background-color: rgba(0, 0, 0, 0.787);
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menuItem {
+    color: white;
+    font-size: large;
+}
+
+#statement{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+#welcome {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#statementContent {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-indent: 40px;
+}
+
+#statement #menu {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hours {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    margin-left: 2em;
+    font-size: 12px;
+}
+
+#hoursLabel {
+    border-bottom: 1px solid white;
+    font-size: 24px;
+}
+
+.hoursValue {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#information {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+}
+
+#location {
+    color: white;
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+}
+
+#locationLabel {
+    font-size: 24px;
+    border-bottom: 1px solid white;
+}
+
+#locationImage{
+    width: 100%;
+    height: 70%;
+    background: url('~restaurantLocation.png') no-repeat center center; 
+    z-index: 100;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#contact {
+    color: white;
+    margin-left: 2em;
+    margin-top: 100px;
+}
+
+#contactLabel {
+    border-bottom: 1px solid white;
+    margin-right: 2rem;
+}
+
+#contact p {
+    font-size: 12px;
+}
+
+@media (max-width : 1050px) {
+    #hours, #location {
+        width: 250px;
+        height: 250px;
+    }
+
+    #contact {
+        margin-top: 0;
+    }
+}
+
+#contactLabel, #hoursLabel, #locationLabel, #welcome{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#menuContainer {
+    margin-top: 120px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 0 20px 0 20px;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+#menuLabel {
+    width: 200px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#theMenu {
+    border-bottom: 3px solid white;
+    
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.menuItemLabels {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.itemNameEnglish {
+    font-size: 17px;
+    margin-top: 2rem;
+}
+
+.price {
+    margin-left: auto;
+    margin-top: 1em;
+}
+
+.menuItemDescription {
+    margin-top: 0;
+    text-indent: 40px;
+}
+
+.itemNumber {
+    margin-top: 1em;
+}
